@@ -1,30 +1,8 @@
-# Fraud Detection Project – Structure and Algorithms Used
+# Fraud Detection Project Summary
 
-## **Project Directory Structure**
+This project showcases an end-to-end fraud detection pipeline using a Random Forest classifier and SMOTE to handle class imbalance. A synthetic dataset of 1,000 transactions is created, incorporating realistic fraud patterns based on transaction amount and time. The data is split into training and testing sets, with SMOTE applied to oversample the minority (fraud) class. 
 
-```
-fraud_detection_project/
-├── data/
-│   ├── raw_data.csv
-│   ├── fraud_predictions.csv
-│   └── top_risky_transactions.csv
-├── scripts/
-│   ├── data_preprocessing.R
-│   ├── smote_balancing.R
-│   ├── random_forest_training.R
-│   ├── hyperparameter_tuning.R
-│   └── evaluation_and_reporting.R
-├── outputs/
-│   ├── plots/
-│   │   ├── roc_curve.png
-│   │   └── fraud_probability_distribution.png
-│   └── reports/
-│       └── fraud_detection_report.md
-├── README.md
-└── requirements.txt
-```
-
----
+A Random Forest model is trained and optimized using cross-validation, and performance is evaluated using confusion matrix metrics and ROC-AUC. Feature importance is analyzed, and top-risk transactions are exported for targeted business investigation. The solution is designed for deployment with integration into live systems, automated retraining, and continuous monitoring.
 
 ## **Algorithms and Techniques Used**
 
@@ -56,4 +34,3 @@ fraud_detection_project/
 
 ---
 
-Let me know if you want this exported immediately as a **standalone markdown file** for your system design notes, or integrated into your upcoming End-to-End ML project summaries today.
